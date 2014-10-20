@@ -27,7 +27,7 @@ In `firebase/app/js/config.js` set the following constant:
 3. Click `Load unpacked extension...`
 4. Select the `chrome` folder of this repository.
 
-###Comments site
+###Comments Site
 This can be hosted by any web server, but since we already have a firebase instance, why not use that?
 
 First install [node.js](http://nodejs.org/).
@@ -45,3 +45,7 @@ First, create an account or login.
 When you are ready to receive some feedback on your application, scroll to the bottom of the page and click the `Share` button. Enter your colleague's e-mail address and click `Send`. This will send them an invitation to view your application. Your application will be updated in Firebase every time you click `Share` or `Save for later`.
 
 Your colleague will receive a link that looks something like `{COMMENTURL}/#/applications/{userid}`. This is a permanent link that can be used by them even as you update your application. Only user accounts created with e-mails that you've explicitly invited through the use of the `Share` button have permission to view or comment on your application.
+
+Current State
+---------
+YCritique is currently functional, but is in need of some serious polishing and styling. We plan on having this finished before the applications open up for the next YC batch.
