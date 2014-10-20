@@ -1,0 +1,38 @@
+{
+    "rules": {
+      ".read": false,
+      ".write": false,
+      "applications" : {
+        "$appid":{
+          //Only allow shared applications to be read by the owner and the person who it has been shared with
+          ".read": "auth != null && (auth.uid == $appid || root.child('users').child($appid).child('sharedWith').hasChild(root.child('users').child(auth.uid).child('email').val().replace('.', ',')))",
+
+          //Only the applicant can write to the application fields
+          ".write": "auth != null && auth.uid == $appid"
+        }
+      },
+      "comments" : {
+        "$appid":{
+          //Only the applicant can read all comments
+          ".read": "auth != null && auth.uid == $appid",
+          "$commem":{
+            //Only the commenter and the applicant can read the comments.
+            ".read": "auth != null && root.child('users').child($appid).child('sharedWith').hasChild(root.child('users').child(auth.uid).child('email').val().replace('.', ','))",
+            //Only the commenter can write comments.
+            ".write": "auth != null && root.child('users').child($appid).child('sharedWith').hasChild(root.child('users').child(auth.uid).child('email').val().replace('.', ','))"
+          },
+          
+          //Dont comment on applications that dont exist
+          ".validate": "root.child('applications').hasChild($appid)"
+        }
+      },
+      "users":{
+        "$user_id": {
+          // grants write access to the owner of this user account
+          // whose uid must exactly match the key ($user_id)
+          ".read" : "auth != null && $user_id === auth.uid",
+          ".write": "auth != null && $user_id === auth.uid"
+        }
+      }
+    }
+}

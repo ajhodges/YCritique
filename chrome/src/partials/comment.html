@@ -1,0 +1,5 @@
+<tabset>
+  <tab ng-repeat='comment in comments' ng-if='comment[dirComment].length > 0' heading='{{ comment.$id | replacecommas }}'>
+    {{ comment[dirComment] }}
+  </tab>
+</tabset>

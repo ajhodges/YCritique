@@ -1,0 +1,57 @@
+{
+  "name": "YCritique",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This Chrome extension helps you get feedback on your YC application from your cofounders/advisors.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "clipboardWrite",
+    "https://api.mailgun.net/v2/*/messages"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://apply.ycombinator.com/app/edit"
+      ],
+      "css": [
+        "css/bootstrap.css",
+        "src/inject/app.css"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "js/angular/angular.js",
+        "js/firebase/firebase.js",
+        "js/firebase/firebase-simple-login.js",
+        "js/angular/angularfire.min.js",
+        "js/bootstrap/bootstrap.min.js",
+        "js/bootstrap/ui-bootstrap-tpls-0.11.2.min.js",
+        "src/inject/config.js",
+        "src/inject/controllers.js",
+        "src/inject/directives.js",
+        "src/inject/filters.js",
+        "src/inject/firebase.utils.js",
+        "src/inject/simpleLogin.js",
+        "src/inject/app.js"
+      ],
+      "html":[
+        "src/partials/share.html",
+        "src/partials/login.html",
+        "src/partials/comment.html",
+        "src/partials/save.html"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "src/partials/share.html",
+    "src/partials/login.html",
+    "src/partials/comment.html",
+    "src/partials/save.html"
+  ]
+}

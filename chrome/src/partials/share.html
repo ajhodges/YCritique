@@ -1,0 +1,9 @@
+<form>
+  <button ng-hide="showShare" class='btn' id='share' ng-click="share($event)">Share</button>
+  <div ng-show="showShare">
+    <span>email</span>
+    <input type="text" ng-change="shareSent = false" ng-model="sharedWith" />
+    <button class='btn' id='share' ng-click="send($event)">Send!</button>
+  </div>
+  <p ng-show="shareSent">A <a href="{{ commentLink }}">comment link</a> has been sent to {{ sharedWith }}</p>
+</form>
