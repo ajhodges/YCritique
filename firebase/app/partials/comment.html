@@ -1,7 +1,7 @@
 <p id='app_questions_{{ field }}'>{{ application[field] }}</p>
 <form>
   <p ng-hide='clicked'>{{ comments[field] }}</p>
-  <a ng-hide='clicked' ng-click="(!commenting) ? (clicked = true) && (commenting = true) : null">Comment</a>
+  <a class="btn btn-default" ng-hide='clicked' ng-click="(!commenting) ? (clicked = true) && (commenting = true) : null">Comment</a>
   <textarea ng-show='clicked' ng-model='comments[field]'></textarea>
-  <a ng-show='clicked' ng-click="save({field: field}); clicked = false; commenting = false;">Save</a>
+  <a class="btn btn-success" ng-show='clicked' ng-click="save({field: field}); clicked = false; commenting = false;">Save</a>
 </form>
