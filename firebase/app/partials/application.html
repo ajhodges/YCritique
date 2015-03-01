@@ -1,282 +1,301 @@
-<form>
-    <fieldset id="f_company">
-      <h3>Company</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <form>
+        <fieldset id="f_company">
+          <h2>Company</h2>
 
-      <div class="q q-name name">
-        <label for="app_questions_name">Company name:</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="name"></div>
-      </div>
+          <div class="q q-name name">
+            <label for="app_questions_name">Company name:</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="name"></div>
+          </div>
 
-      <div class="q q-url url">
-        <label for="app_questions_url">Company url, if any:</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="url"></div>
-      </div>
+          <div class="q q-url url">
+            <label for="app_questions_url">Company url, if any:</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="url"></div>
+          </div>
 
-      <div class="q q-url demo">
-        <label for="app_questions_demo">If you have an online demo, what's the url?</label>
-        <p><label for="app_questions_demo">(Please don't password protect it; just use an obscure url.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="demo"></div>
-      </div>
+          <div class="q q-url demo">
+            <label for="app_questions_demo">If you have an online demo, what's the url?</label>
+            <p><label for="app_questions_demo">(Please don't password protect it; just use an obscure url.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="demo"></div>
+          </div>
 
-      <div class="q q-text make">
-        <label for="app_questions_make">What is your company going to make?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="make"></div>
-      </div>
+          <div class="q q-text make">
+            <label for="app_questions_make">What is your company going to make?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="make"></div>
+          </div>
 
-      <div class="q q-select rfs2">
-        <label for="app_questions_rfs2">If this application is a response to a YC <a href="http://www.ycombinator.com/rfs.html" target="_blank">RFS</a>, which one?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="rfs2"></div>
-      </div>
+          <div class="q q-select rfs2">
+            <label for="app_questions_rfs2">If this application is a response to a YC <a href="http://www.ycombinator.com/rfs.html" target="_blank">RFS</a>, which one?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="rfs2"></div>
+          </div>
 
-      <div class="q q-string where">
-        <label for="app_questions_where">Where do you live now, and where would the company be based after YC?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="where"></div>
-      </div>
-    </fieldset>
+          <div class="q q-string where">
+            <label for="app_questions_where">Where do you live now, and where would the company be based after YC?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="where"></div>
+          </div>
+        </fieldset>
 
-    <fieldset id="f_contact">
-      <h3>Contact</h3>
+        <hr />
 
-      <div class="q q-email email">
-        <label for="app_questions_email">Email address we should contact you at:</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="email"></div>
-      </div>
+        <fieldset id="f_contact">
+          <h2>Contact</h2>
 
-      <div class="q q-string phone">
-        <label for="app_questions_phone">Phone number(s):</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="phone"></div>
-      </div>
-    </fieldset>
+          <div class="q q-email email">
+            <label for="app_questions_email">Email address we should contact you at:</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="email"></div>
+          </div>
 
-    <fieldset id="f_founders">
-      <h3>Founders</h3>
+          <div class="q q-string phone">
+            <label for="app_questions_phone">Phone number(s):</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="phone"></div>
+          </div>
+        </fieldset>
 
-      <div class="q q-youtube video">
-        <label for="app_questions_video">Please enter the url of a 1 minute unlisted (not private) 
-        YouTube video introducing the founders. (<a href="http://ycombinator.com/video.html" target="_blank">Instructions</a>.)</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="video"></div>
-      </div>
+        <hr />
 
-      <div class="q q-text built">
-        <label for="app_questions_built">Please tell us about an interesting project, preferably 
-        outside of class or work, that two or more of you created together. Include urls if possible.</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="built"></div>
-      </div>
+        <fieldset id="f_founders">
+          <h2>Founders</h2>
 
-      <div class="q q-text meet">
-        <label for="app_questions_meet">How long have the founders known one another and
-        how did you meet? Have any of the founders not met in person?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="meet"></div>
-      </div>
-    </fieldset>
+          <div class="q q-youtube video">
+            <label for="app_questions_video">Please enter the url of a 1 minute unlisted (not private) 
+            YouTube video introducing the founders. (<a href="http://ycombinator.com/video.html" target="_blank">Instructions</a>.)</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="video"></div>
+          </div>
 
-    <fieldset id="f_progress">
-      <h3>Progress</h3>
+          <div class="q q-text built">
+            <label for="app_questions_built">Please tell us about an interesting project, preferably 
+            outside of class or work, that two or more of you created together. Include urls if possible.</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="built"></div>
+          </div>
 
-      <div class="q q-text howfar">
-        <label for="app_questions_howfar">How far along are you?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="howfar"></div>
-      </div>
+          <div class="q q-text meet">
+            <label for="app_questions_meet">How long have the founders known one another and
+            how did you meet? Have any of the founders not met in person?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="meet"></div>
+          </div>
+        </fieldset>
 
-      <div class="q q-string worked">
-        <label for="app_questions_worked">If you've already started working on it, how
-        long have you been working and how many lines of code (if applicable) have you
-        written?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="worked"></div>
-      </div>
+        <hr />
 
-      <div class="q q-text since">
-        <label for="app_questions_since">If you've applied previously with the same idea,
-        how much progress have you made since the last time you applied? Anything
-        change?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="since"></div>
-      </div>
+        <fieldset id="f_progress">
+          <h2>Progress</h2>
 
-      <div class="q q-select stage">
-        <label for="app_questions_stage">Which of the following best describes your
-        progress?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="stage"></div>
-      </div>
+          <div class="q q-text howfar">
+            <label for="app_questions_howfar">How far along are you?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="howfar"></div>
+          </div>
 
-      <div class="q q-string howmuch">
-        <label for="app_questions_howmuch">How much revenue?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="howmuch"></div>
-      </div>
+          <div class="q q-string worked">
+            <label for="app_questions_worked">If you've already started working on it, how
+            long have you been working and how many lines of code (if applicable) have you
+            written?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="worked"></div>
+          </div>
 
-      <div class="q q-text growthrate">
-        <label for="app_questions_growthrate">What is your monthly growth rate?</label>
-        <p><label for="app_questions_growthrate">(in users or revenue or
-        both)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="growthrate"></div>
-      </div>
+          <div class="q q-text since">
+            <label for="app_questions_since">If you've applied previously with the same idea,
+            how much progress have you made since the last time you applied? Anything
+            change?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="since"></div>
+          </div>
 
-      <div class="q q-text acc">
-        <label for="app_questions_acc">If you have already participated or committed to
-        participate in an incubator, "accelerator" or "pre-accelerator" program, please
-        tell us about it.</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="acc"></div>
-      </div>
-    </fieldset>
+          <div class="q q-select stage">
+            <label for="app_questions_stage">Which of the following best describes your
+            progress?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="stage"></div>
+          </div>
 
-    <fieldset id="f_idea">
-      <h3>Idea</h3>
+          <div class="q q-string howmuch">
+            <label for="app_questions_howmuch">How much revenue?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="howmuch"></div>
+          </div>
 
-      <div class="q q-text exp">
-        <label for="app_questions_exp">Why did you pick this idea to work on? Do you have
-        domain expertise in this area? How do you know people need what you're
-        making?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="idea"></div>
-      </div>
+          <div class="q q-text growthrate">
+            <label for="app_questions_growthrate">What is your monthly growth rate?</label>
+            <p><label for="app_questions_growthrate">(in users or revenue or
+            both)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="growthrate"></div>
+          </div>
 
-      <div class="q q-text new">
-        <label for="app_questions_new">What's new about what you're making? What
-        substitutes do people resort to because it doesn't exist yet (or they don't know
-        about it)?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="new"></div>
-      </div>
+          <div class="q q-text acc">
+            <label for="app_questions_acc">If you have already participated or committed to
+            participate in an incubator, "accelerator" or "pre-accelerator" program, please
+            tell us about it.</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="acc"></div>
+          </div>
+        </fieldset>
 
-      <div class="q q-text compet">
-        <label for="app_questions_compet">Who are your competitors, and who might become
-        competitors? Who do you fear most?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="compet"></div>
-      </div>
+        <hr />
 
-      <div class="q q-text get">
-        <label for="app_questions_get">What do you understand about your business that
-        other companies in it just don't get?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="get"></div>
-      </div>
+        <fieldset id="f_idea">
+          <h2>Idea</h2>
 
-      <div class="q q-text money">
-        <label for="app_questions_money">How do or will you make money? How much could
-        you make?</label>
+          <div class="q q-text exp">
+            <label for="app_questions_exp">Why did you pick this idea to work on? Do you have
+            domain expertise in this area? How do you know people need what you're
+            making?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="idea"></div>
+          </div>
 
-        <p><label for="app_questions_money">(We realize you can't know precisely, but
-        give your best estimate.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="money"></div>
-      </div>
+          <div class="q q-text new">
+            <label for="app_questions_new">What's new about what you're making? What
+            substitutes do people resort to because it doesn't exist yet (or they don't know
+            about it)?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="new"></div>
+          </div>
 
-      <div class="q q-text distro">
-        <label for="app_questions_distro">How will you get users? If your idea is the
-        type that faces a chicken-and-egg problem in the sense that it won't be
-        attractive to users till it has a lot of users (e.g. a marketplace, a dating
-        site, an ad network), how will you overcome that?</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="distro"></div>
-      </div>
-    </fieldset>
+          <div class="q q-text compet">
+            <label for="app_questions_compet">Who are your competitors, and who might become
+            competitors? Who do you fear most?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="compet"></div>
+          </div>
 
-    <fieldset id="f_equity">
-      <h3>Equity</h3>
+          <div class="q q-text get">
+            <label for="app_questions_get">What do you understand about your business that
+            other companies in it just don't get?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="get"></div>
+          </div>
 
-      <div class="q q-select incyet">
-      <label for="app_questions_incyet">Have you incorporated, or formed any legal entity
-      (like an LLC) yet?</label>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incyet"></div>
-      </div>
+          <div class="q q-text money">
+            <label for="app_questions_money">How do or will you make money? How much could
+            you make?</label>
 
-      <div class="q q-string inctype">
-        <label for="app_questions_inctype">What kind of entity and in what state or
-        country was the entity formed?</label>
+            <p><label for="app_questions_money">(We realize you can't know precisely, but
+            give your best estimate.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="money"></div>
+          </div>
 
-        <p><label for="app_questions_inctype">(e.g. Delaware C
-        Corp)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="inctype"></div>
-      </div>
+          <div class="q q-text distro">
+            <label for="app_questions_distro">How will you get users? If your idea is the
+            type that faces a chicken-and-egg problem in the sense that it won't be
+            attractive to users till it has a lot of users (e.g. a marketplace, a dating
+            site, an ad network), how will you overcome that?</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="distro"></div>
+          </div>
+        </fieldset>
 
-      <div class="q q-text incpercent">
-        <label for="app_questions_incpercent">Please describe the breakdown of the equity
-        ownership in percentages among the founders and any other stockholders.</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incpercent"></div>
-      </div>
+        <hr />
 
-      <div class="q q-text incinvest">
-        <label for="app_questions_incinvest">List any investments your company has
-        received. Include the name of the investor, the amount invested, the premoney
-        valuation / valuation cap, and the type of security sold (convertible notes,
-        safes or stock).</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incinvest"></div>
-      </div>
+        <fieldset id="f_equity">
+          <h2>Equity</h2>
 
-      <div class="q q-text percent2">
-        <label for="app_questions_percent2">If you have not formed the company yet,
-        describe the planned equity ownership breakdown among the founders and any other
-        proposed stockholders.</label>
+          <div class="q q-select incyet">
+          <label for="app_questions_incyet">Have you incorporated, or formed any legal entity
+          (like an LLC) yet?</label>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incyet"></div>
+          </div>
 
-        <p><label for="app_questions_percent2">(This question is as much for you as
-        us.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="percent2"></div>
-      </div>
+          <div class="q q-string inctype">
+            <label for="app_questions_inctype">What kind of entity and in what state or
+            country was the entity formed?</label>
 
-      <div class="q q-text incelse">
-        <label for="app_questions_incelse">Please provide any other relevant information
-        about the structure or formation of the company.</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incelse"></div>
-      </div>
-    </fieldset>
+            <p><label for="app_questions_inctype">(e.g. Delaware C
+            Corp)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="inctype"></div>
+          </div>
 
-    <fieldset id="f_ip">
-      <h3>IP</h3>
+          <div class="q q-text incpercent">
+            <label for="app_questions_incpercent">Please describe the breakdown of the equity
+            ownership in percentages among the founders and any other stockholders.</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incpercent"></div>
+          </div>
 
-      <div class="q q-text ip2">
-        <label for="app_questions_ip2">Are any of the founders covered by noncompetes or
-        intellectual property agreements that overlap with your project? If so, please
-        explain.</label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="ip2"></div>
-      </div>
+          <div class="q q-text incinvest">
+            <label for="app_questions_incinvest">List any investments your company has
+            received. Include the name of the investor, the amount invested, the premoney
+            valuation / valuation cap, and the type of security sold (convertible notes,
+            safes or stock).</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incinvest"></div>
+          </div>
 
-      <div class="q q-text others2">
-        <label for="app_questions_others2">Was any of your code written by someone who is
-        not one of your founders? If so, describe how can you legally use it.</label>
+          <div class="q q-text percent2">
+            <label for="app_questions_percent2">If you have not formed the company yet,
+            describe the planned equity ownership breakdown among the founders and any other
+            proposed stockholders.</label>
 
-        <p><label for="app_questions_others2">(Open source is ok of course.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="others2"></div>
-      </div>
-    </fieldset>
+            <p><label for="app_questions_percent2">(This question is as much for you as
+            us.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="percent2"></div>
+          </div>
 
-    <fieldset id="f_others">
-      <h3>Others</h3>
+          <div class="q q-text incelse">
+            <label for="app_questions_incelse">Please provide any other relevant information
+            about the structure or formation of the company.</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="incelse"></div>
+          </div>
+        </fieldset>
 
-      <div class=
-      "q q-select badness">
-      <label for="app_questions_badness">Are any of the following true?</label>
+        <hr />
 
-        <ul>
-          <li><label for="app_questions_badness">You are the only founder.</label></li>
+        <fieldset id="f_ip">
+          <h2>IP</h2>
 
-          <li><label for="app_questions_badness">You are a student who may return to
-          school when the next term starts.</label></li>
+          <div class="q q-text ip2">
+            <label for="app_questions_ip2">Are any of the founders covered by noncompetes or
+            intellectual property agreements that overlap with your project? If so, please
+            explain.</label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="ip2"></div>
+          </div>
 
-          <li><label for="app_questions_badness">Half or more of your group can't move to
-          the Bay Area.</label></li>
+          <div class="q q-text others2">
+            <label for="app_questions_others2">Was any of your code written by someone who is
+            not one of your founders? If so, describe how can you legally use it.</label>
 
-          <li><label for="app_questions_badness">One or more founders will keep their
-          current jobs.</label></li>
+            <p><label for="app_questions_others2">(Open source is ok of course.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="others2"></div>
+          </div>
+        </fieldset>
 
-          <li><label for="app_questions_badness">None of the founders are
-          programmers.</label></li>
-        </ul>
+        <hr />
 
-        <p><label for="app_questions_badness">(Answering yes doesn't disqualify you. It's
-        just to remind us to check.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="badness"></div>
-      </div>
+        <fieldset id="f_others">
+          <h2>Others</h2>
 
-      <div class="q q-text ideas">
-        <label for="app_questions_ideas">If you had any other ideas you considered
-        applying with, please list them. One may be something we've been waiting for.
-        Often when we fund people it's to do something they list here and not in the main
-        </label> 
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="ideas"></div>
-      </div>
+          <div class=
+          "q q-select badness">
+          <label for="app_questions_badness">Are any of the following true?</label>
 
-      <div class="q q-text amuse">
-        <label for="app_questions_amuse">Please tell us something surprising or amusing
-        that one of you has discovered.</label>
+            <ul>
+              <li><label for="app_questions_badness">You are the only founder.</label></li>
 
-        <p><label for="app_questions_amuse">(The answer need not be related to your
-        project.)</label></p>
-        <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="amuse"></div>
-      </div>
-    </fieldset>
-  </form>
+              <li><label for="app_questions_badness">You are a student who may return to
+              school when the next term starts.</label></li>
 
+              <li><label for="app_questions_badness">Half or more of your group can't move to
+              the Bay Area.</label></li>
+
+              <li><label for="app_questions_badness">One or more founders will keep their
+              current jobs.</label></li>
+
+              <li><label for="app_questions_badness">None of the founders are
+              programmers.</label></li>
+            </ul>
+
+            <p><label for="app_questions_badness">(Answering yes doesn't disqualify you. It's
+            just to remind us to check.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="badness"></div>
+          </div>
+
+          <div class="q q-text ideas">
+            <label for="app_questions_ideas">If you had any other ideas you considered
+            applying with, please list them. One may be something we've been waiting for.
+            Often when we fund people it's to do something they list here and not in the main
+            </label> 
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="ideas"></div>
+          </div>
+
+          <div class="q q-text amuse">
+            <label for="app_questions_amuse">Please tell us something surprising or amusing
+            that one of you has discovered.</label>
+
+            <p><label for="app_questions_amuse">(The answer need not be related to your
+            project.)</label></p>
+            <div dir-comment comments="comments" commenting="commenting" application="application" save="saveComment(field)" field="amuse"></div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
