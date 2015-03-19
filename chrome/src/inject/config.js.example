@@ -1,0 +1,9 @@
+'use strict';
+
+// Declare app level module which depends on filters, and services
+angular.module('YCritique.config', [])
+  // your Firebase data URL goes here, no trailing slash
+  .constant('FBURL', 'https://{instance}.firebaseio.com')
+  .constant('MAILGUN_API_KEY', 'api:key-{etc}')
+  .constant('MAILGUN_SERVER', '{server}.mailgun.org')
+  .constant('COMMENTURL', 'https://{instance}.firebaseapp.com');
